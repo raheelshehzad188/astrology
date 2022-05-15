@@ -1,21 +1,66 @@
-
-   
-<ion-header>
-  <ion-toolbar>
+<ion-header xmlns="http://www.w3.org/1999/html">
+  <ion-toolbar style="height: 87px;">
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
-    <ion-title>Support</ion-title>
+    <div class="alignment">
+      <ion-list>
+      <ion-item>
+        <ion-thumbnail>
+          <ion-img class="img7" src="assets/images/image 7.png"></ion-img>
+        </ion-thumbnail>
+      </ion-item>
+    </ion-list>
+      <div class="ion-float-right">
+    <ion-text CLASS="txt" color="dark">
+      <p>200</p>
+    </ion-text>
+    <ion-list>
+      <ion-item>
+        <ion-thumbnail>
+          <ion-img class="cost-supp" src="assets/images/customersupport.png"></ion-img>
+        </ion-thumbnail>
+      </ion-item>
+    </ion-list>
+    </div>
+    </div>
   </ion-toolbar>
 
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <ion-searchbar placeholder="Search Astrologer in here"></ion-searchbar>
+  <ion-grid>
+    <ion-row class="home">
+      <ion-col class="spinner">
+        <img src="assets/images/spin.png">
+      </ion-col>
+      <ion-col>
+        <button class="spin-now">Spin Now</button>
+      </ion-col>
+    </ion-row>
+    <ion-row class="home1">
+      <ion-col>
+        <h5><b>Astrologer</b></h5>
+      </ion-col>
+      <ion-col class="view-all">
+        <a href="#">View All</a>
+      </ion-col>
+    </ion-row>
+    <ion-row class="row2">
+      <ion-col>
+       <img src="assets/images/profile.png">
+      </ion-col>
+      <ion-col class="prof">
+        <h5><b>Jade Warren</b></h5>
+        <p>Torot, physic</p>
+        <p>EXP : 18 Years</p>
+        <p>English, Hindi</p>
+      </ion-col>
+      <ion-col>
+        <button class="consult">Consult</button>
+        <a class="consult1" href="#">$200/Min</a>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
